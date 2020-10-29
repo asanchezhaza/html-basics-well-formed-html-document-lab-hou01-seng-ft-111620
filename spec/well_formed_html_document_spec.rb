@@ -41,7 +41,7 @@ RSpec.describe "Well-Formed HTML Document" do
   end
 
   context 'w3c validation' do
-    it 'is a valid html document' do
+    it 'is a valid w3c document' do
       validator = W3CValidators::NuValidator.new
       html = File.read('./index.html')
       results = validator.validate_text(html)
